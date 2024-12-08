@@ -8,5 +8,11 @@
         <file>ui/assets/carIco.svg</file>
         <file>ui/assets/lock.svg</file>
         <file>ui/assets/unlock.svg</file>
+        <file>ui/RightScreen/NavigationBox.qml</file>
+        <file>ui/assets/search.svg</file>
+        <file>ui/BottomBar/HVACComponent.qml</file>
+        <file>ui/assets/volume1.svg</file>
+        <file>ui/assets/volume2.svg</file>
+        <file>ui/assets/mute.svg</file>
     </qresource>
 </RCC>
