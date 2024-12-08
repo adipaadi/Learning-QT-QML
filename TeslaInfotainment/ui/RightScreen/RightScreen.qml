@@ -72,7 +72,46 @@ Rectangle {
         text: systemHandler.userName
     }
 
+    NavigationBox {
+        Image {
+            source: "../assets/search.svg"
+            id: searchIcon
 
+            anchors {
+                left: parent.left
+                leftMargin: 25
+                verticalCenter: parent.verticalCenter
+            }
+            height: parent.height * 0.45
+            fillMode: Image.PreserveAspectFit
+        }
+
+        Text {
+            id: navPlaceholder
+            visible: navInput.text === ""
+            color: "#373737"
+            text: "Navigate"
+            anchors {
+                verticalCenter: parent.verticalCenter
+                left: searchIcon.right
+                leftMargin: 20
+            }
+        }
+
+        TextInput {
+            id: navInput
+            clip: true
+            anchors {
+                top: parent.top
+                bottom: parent.bottom
+                right: parent.right
+                left: searchIcon.right
+                leftMargin: 20
+            }
+            verticalAlignment: Text.AlignVCenter
+            font.pixelSize: 16
+        }
+    }
 
     width: parent.width * 2/3
 }
