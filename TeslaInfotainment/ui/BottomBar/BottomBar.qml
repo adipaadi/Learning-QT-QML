@@ -22,5 +22,29 @@ Rectangle {
         height: parent.height * 0.9
             fillMode: Image.PreserveAspectFit
     }
+
+    HVACComponent {
+        id: driverHVACComponent
+        anchors {
+            left: carSettingsIcon.right
+            top: parent.top
+            bottom: parent.bottom
+            leftMargin: 150
+        }
+        hvacController: driverHVAC
+
+    }
+
+    HVACComponent {
+        id: passengerHVACComponent
+        anchors {
+            right: parent.right
+            top: parent.top
+            bottom: parent.bottom
+            rightMargin: 150
+        }
+        hvacController: passengerHVAC
+
+    }
 }
 
